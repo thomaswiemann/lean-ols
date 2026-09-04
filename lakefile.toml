@@ -1,0 +1,23 @@
+name = "ols"
+version = "0.1.0"
+keywords = ["math", "econometrics"]
+defaultTargets = ["Ols"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+weak.linter.style.header = false
+weak.linter.style.show = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.0-rc2"
+
+[[lean_lib]]
+name = "Simple"
+
+[[lean_lib]]
+name = "Ols"
